@@ -153,6 +153,8 @@ class UNet(nn.Module):
 
         # Creation of the criterion
         criterion = nn.CrossEntropyLoss()
+        if cuda:
+            criterion = criterion.cuda()
 
         # To keep track of the network generalizing the most
         min_valid_loss = numpy.inf
