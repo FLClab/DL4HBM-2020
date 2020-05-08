@@ -6,7 +6,7 @@ import torch
 
 from torch import nn
 from collections import defaultdict
-from tqdm import tqdm, trange
+from tqdm.auto import tqdm, trange
 
 import loader
 
@@ -142,8 +142,8 @@ class UNet(nn.Module):
             self = self.cuda()
 
         # Creates the loaders
-        train_loader = loader.get_loader(data[train_idx], targets[train_idx], batch_size=5)
-        valid_loader = loader.get_loader(data[valid_idx], targets[valid_idx], batch_size=2, validation=True)
+        train_loader = loader.get_loader(data[train_idx], targets[train_idx], batch_size=64)
+        valid_loader = loader.get_loader(data[valid_idx], targets[valid_idx], batch_size=64, validation=True)
 
         # Creation of the optimizer
         optimizer = torch.optim.Adam(self.parameters(), lr=lr)
@@ -166,7 +166,7 @@ class UNet(nn.Module):
 
             # training
             self.train()
-            for X, y in tqdm(train_loader, desc="Training", leave=False):
+            for X, y in tqdm(train_loader, leave=False, desc="Training"):
 
                 # Verifies the shape of the data
                 if X.ndim == 3:
@@ -196,7 +196,7 @@ class UNet(nn.Module):
 
             # validation
             self.eval()
-            for X, y in tqdm(valid_loader, desc="Validation", leave=False):
+            for X, y in tqdm(valid_loader, leave=False, desc="Validation"):
 
                 # Verifies the shape of the data
                 if X.ndim == 3:
@@ -225,11 +225,10 @@ class UNet(nn.Module):
                                  (numpy.mean, numpy.median, numpy.min, numpy.std)):
                 self.stats[key].append(func(statLossTest))
 
-
 if __name__ == "__main__":
 
     data = numpy.load("raw_data/data.npz")
-    data, targets = data["images"], data["labels"]
-    train_idx, valid_idx = numpy.arange(0, 500), numpy.arange(500, len(data))
+    images, targets = data["images"], data["labels"]
+    train_idx, valid_idx = numpy.arange(0, 400), numpy.arange(400, len(data["images"]))
     model = UNet(in_channels=1, out_channels=2)
-    model.train_model(data, targets, train_idx, valid_idx)
+    model.train_model(images, targets, train_idx, valid_idx)
