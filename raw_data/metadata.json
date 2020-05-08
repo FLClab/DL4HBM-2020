@@ -1,0 +1,4025 @@
+{
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/0.tiff": {
+        "max": 12.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/1.tiff": {
+        "max": 31.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/10.tiff": {
+        "max": 88.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/11.tiff": {
+        "max": 68.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/12.tiff": {
+        "max": 106.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/14.tiff": {
+        "max": 54.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/15.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/16.tiff": {
+        "max": 81.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/17.tiff": {
+        "max": 78.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/18.tiff": {
+        "max": 114.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/19.tiff": {
+        "max": 98.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/2.tiff": {
+        "max": 22.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/4.tiff": {
+        "max": 85.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/5.tiff": {
+        "max": 93.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/6.tiff": {
+        "max": 85.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/7.tiff": {
+        "max": 81.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/8.tiff": {
+        "max": 84.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-20steps-pdt10us/STED/9.tiff": {
+        "max": 80.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/0.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/1.tiff": {
+        "max": 95.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/10.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/11.tiff": {
+        "max": 49.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/12.tiff": {
+        "max": 83.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/14.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/15.tiff": {
+        "max": 72.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/17.tiff": {
+        "max": 83.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/18.tiff": {
+        "max": 78.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/19.tiff": {
+        "max": 78.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/2.tiff": {
+        "max": 112.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/21.tiff": {
+        "max": 58.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/23.tiff": {
+        "max": 43.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/24.tiff": {
+        "max": 71.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/25.tiff": {
+        "max": 74.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/26.tiff": {
+        "max": 137.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/28.tiff": {
+        "max": 102.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/29.tiff": {
+        "max": 75.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/3.tiff": {
+        "max": 78.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/30.tiff": {
+        "max": 3.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/31.tiff": {
+        "max": 48.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/33.tiff": {
+        "max": 149.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/34.tiff": {
+        "max": 62.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/35.tiff": {
+        "max": 89.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/36.tiff": {
+        "max": 62.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/37.tiff": {
+        "max": 70.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/38.tiff": {
+        "max": 74.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/39.tiff": {
+        "max": 76.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/4.tiff": {
+        "max": 108.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/40.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/41.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/43.tiff": {
+        "max": 81.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/44.tiff": {
+        "max": 74.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/45.tiff": {
+        "max": 73.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/46.tiff": {
+        "max": 60.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/47.tiff": {
+        "max": 147.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/48.tiff": {
+        "max": 159.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/49.tiff": {
+        "max": 100.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/5.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/6.tiff": {
+        "max": 102.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/7.tiff": {
+        "max": 113.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/8.tiff": {
+        "max": 45.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-1/STED/9.tiff": {
+        "max": 91.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/1.tiff": {
+        "max": 26.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/10.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/11.tiff": {
+        "max": 32.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/12.tiff": {
+        "max": 45.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/13.tiff": {
+        "max": 48.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/14.tiff": {
+        "max": 84.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/15.tiff": {
+        "max": 82.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/16.tiff": {
+        "max": 62.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/2.tiff": {
+        "max": 44.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/20.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/21.tiff": {
+        "max": 21.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/22.tiff": {
+        "max": 56.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/23.tiff": {
+        "max": 46.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/24.tiff": {
+        "max": 72.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/26.tiff": {
+        "max": 45.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/27.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/28.tiff": {
+        "max": 42.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/29.tiff": {
+        "max": 54.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/3.tiff": {
+        "max": 98.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/30.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/31.tiff": {
+        "max": 28.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/32.tiff": {
+        "max": 91.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/33.tiff": {
+        "max": 62.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/34.tiff": {
+        "max": 93.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/35.tiff": {
+        "max": 82.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/36.tiff": {
+        "max": 128.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/37.tiff": {
+        "max": 50.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/38.tiff": {
+        "max": 41.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/39.tiff": {
+        "max": 64.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/4.tiff": {
+        "max": 43.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/41.tiff": {
+        "max": 27.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/42.tiff": {
+        "max": 47.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/43.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/44.tiff": {
+        "max": 60.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/45.tiff": {
+        "max": 86.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/46.tiff": {
+        "max": 96.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/47.tiff": {
+        "max": 60.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/48.tiff": {
+        "max": 73.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/49.tiff": {
+        "max": 80.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/50.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/6.tiff": {
+        "max": 54.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/7.tiff": {
+        "max": 80.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/8.tiff": {
+        "max": 69.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Fig1-Uniform-Ph635-Exc-pdt10-10steps-2/STED/9.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/0.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/1.tiff": {
+        "max": 2.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/100.tiff": {
+        "max": 70.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/101.tiff": {
+        "max": 39.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/102.tiff": {
+        "max": 81.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/103.tiff": {
+        "max": 123.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/105.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/106.tiff": {
+        "max": 42.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/11.tiff": {
+        "max": 91.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/12.tiff": {
+        "max": 59.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/13.tiff": {
+        "max": 57.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/14.tiff": {
+        "max": 31.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/15.tiff": {
+        "max": 42.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/16.tiff": {
+        "max": 93.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/17.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/19.tiff": {
+        "max": 90.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/2.tiff": {
+        "max": 26.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/20.tiff": {
+        "max": 143.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/21.tiff": {
+        "max": 64.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/22.tiff": {
+        "max": 140.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/24.tiff": {
+        "max": 139.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/25.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/26.tiff": {
+        "max": 98.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/27.tiff": {
+        "max": 110.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/29.tiff": {
+        "max": 43.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/3.tiff": {
+        "max": 29.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/30.tiff": {
+        "max": 43.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/31.tiff": {
+        "max": 81.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/33.tiff": {
+        "max": 43.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/34.tiff": {
+        "max": 34.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/35.tiff": {
+        "max": 59.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/36.tiff": {
+        "max": 158.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/37.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/4.tiff": {
+        "max": 37.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/43.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/44.tiff": {
+        "max": 34.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/46.tiff": {
+        "max": 47.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/47.tiff": {
+        "max": 40.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/48.tiff": {
+        "max": 24.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/49.tiff": {
+        "max": 105.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/5.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/51.tiff": {
+        "max": 72.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/52.tiff": {
+        "max": 44.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/53.tiff": {
+        "max": 49.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/54.tiff": {
+        "max": 55.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/55.tiff": {
+        "max": 47.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/56.tiff": {
+        "max": 39.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/57.tiff": {
+        "max": 23.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/58.tiff": {
+        "max": 49.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/59.tiff": {
+        "max": 83.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/6.tiff": {
+        "max": 85.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/60.tiff": {
+        "max": 76.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/61.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/62.tiff": {
+        "max": 109.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/63.tiff": {
+        "max": 62.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/65.tiff": {
+        "max": 102.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/66.tiff": {
+        "max": 163.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/67.tiff": {
+        "max": 39.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/7.tiff": {
+        "max": 50.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/70.tiff": {
+        "max": 101.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/71.tiff": {
+        "max": 104.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/72.tiff": {
+        "max": 32.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/73.tiff": {
+        "max": 61.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/74.tiff": {
+        "max": 29.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/75.tiff": {
+        "max": 40.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/76.tiff": {
+        "max": 49.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/77.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/79.tiff": {
+        "max": 43.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/80.tiff": {
+        "max": 80.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/81.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/82.tiff": {
+        "max": 33.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/83.tiff": {
+        "max": 51.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/84.tiff": {
+        "max": 75.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/85.tiff": {
+        "max": 43.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/87.tiff": {
+        "max": 39.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/88.tiff": {
+        "max": 36.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/89.tiff": {
+        "max": 42.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/9.tiff": {
+        "max": 52.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/90.tiff": {
+        "max": 41.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/91.tiff": {
+        "max": 45.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/92.tiff": {
+        "max": 122.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/93.tiff": {
+        "max": 69.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/94.tiff": {
+        "max": 50.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/95.tiff": {
+        "max": 67.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/96.tiff": {
+        "max": 110.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/97.tiff": {
+        "max": 42.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/98.tiff": {
+        "max": 118.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-Optimization-Autocorr-Exc-1/STED/99.tiff": {
+        "max": 44.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/0.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/1.tiff": {
+        "max": 51.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/10.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/11.tiff": {
+        "max": 50.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/12.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/15.tiff": {
+        "max": 58.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/16.tiff": {
+        "max": 173.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/17.tiff": {
+        "max": 89.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/18.tiff": {
+        "max": 29.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/19.tiff": {
+        "max": 72.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/2.tiff": {
+        "max": 37.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/20.tiff": {
+        "max": 56.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/21.tiff": {
+        "max": 45.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/22.tiff": {
+        "max": 80.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/23.tiff": {
+        "max": 28.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/24.tiff": {
+        "max": 55.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/25.tiff": {
+        "max": 51.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/26.tiff": {
+        "max": 38.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/27.tiff": {
+        "max": 41.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/28.tiff": {
+        "max": 106.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/29.tiff": {
+        "max": 35.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/3.tiff": {
+        "max": 68.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/31.tiff": {
+        "max": 49.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/32.tiff": {
+        "max": 53.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/33.tiff": {
+        "max": 73.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/34.tiff": {
+        "max": 49.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/35.tiff": {
+        "max": 49.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/36.tiff": {
+        "max": 88.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/37.tiff": {
+        "max": 48.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/38.tiff": {
+        "max": 83.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/39.tiff": {
+        "max": 170.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/4.tiff": {
+        "max": 27.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/40.tiff": {
+        "max": 30.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/42.tiff": {
+        "max": 50.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/43.tiff": {
+        "max": 52.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/44.tiff": {
+        "max": 46.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/45.tiff": {
+        "max": 37.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/46.tiff": {
+        "max": 44.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/47.tiff": {
+        "max": 79.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/48.tiff": {
+        "max": 62.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/49.tiff": {
+        "max": 107.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/5.tiff": {
+        "max": 40.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/7.tiff": {
+        "max": 60.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Ph635-single-params-1/STED/8.tiff": {
+        "max": 61.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/0.tiff": {
+        "max": 63.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/1.tiff": {
+        "max": 45.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/10.tiff": {
+        "max": 55.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/11.tiff": {
+        "max": 33.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/12.tiff": {
+        "max": 33.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/13.tiff": {
+        "max": 17.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/14.tiff": {
+        "max": 11.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/15.tiff": {
+        "max": 30.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/16.tiff": {
+        "max": 73.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/17.tiff": {
+        "max": 16.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/18.tiff": {
+        "max": 47.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/19.tiff": {
+        "max": 34.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/2.tiff": {
+        "max": 7.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/20.tiff": {
+        "max": 9.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/21.tiff": {
+        "max": 36.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/22.tiff": {
+        "max": 15.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/3.tiff": {
+        "max": 25.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/4.tiff": {
+        "max": 40.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/5.tiff": {
+        "max": 4.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/6.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/7.tiff": {
+        "max": 118.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/8.tiff": {
+        "max": 20.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-2/STED/9.tiff": {
+        "max": 13.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/48.tiff": {
+        "max": 29.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/50.tiff": {
+        "max": 51.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/51.tiff": {
+        "max": 61.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/52.tiff": {
+        "max": 61.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/53.tiff": {
+        "max": 85.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/54.tiff": {
+        "max": 30.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/55.tiff": {
+        "max": 41.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/56.tiff": {
+        "max": 40.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Autocorrelation-Signal-2/STED/57.tiff": {
+        "max": 51.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/0.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/1.tiff": {
+        "max": 10.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/10.tiff": {
+        "max": 71.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/11.tiff": {
+        "max": 70.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/12.tiff": {
+        "max": 88.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/13.tiff": {
+        "max": 28.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/14.tiff": {
+        "max": 92.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/15.tiff": {
+        "max": 80.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/16.tiff": {
+        "max": 81.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/17.tiff": {
+        "max": 75.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/18.tiff": {
+        "max": 59.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/19.tiff": {
+        "max": 60.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/2.tiff": {
+        "max": 83.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/21.tiff": {
+        "max": 89.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/22.tiff": {
+        "max": 34.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/23.tiff": {
+        "max": 91.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/24.tiff": {
+        "max": 63.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/25.tiff": {
+        "max": 71.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/26.tiff": {
+        "max": 70.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/27.tiff": {
+        "max": 93.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/28.tiff": {
+        "max": 91.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/29.tiff": {
+        "max": 63.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/3.tiff": {
+        "max": 50.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/30.tiff": {
+        "max": 58.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/31.tiff": {
+        "max": 113.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/32.tiff": {
+        "max": 29.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/4.tiff": {
+        "max": 76.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/5.tiff": {
+        "max": 58.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/6.tiff": {
+        "max": 54.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/7.tiff": {
+        "max": 81.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/8.tiff": {
+        "max": 40.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635-Exc-Quality-Signal/STED/9.tiff": {
+        "max": 105.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635/STED/0.tiff": {
+        "max": 38.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635/STED/3.tiff": {
+        "max": 11.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_0.tiff": {
+        "max": 19.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_1.tiff": {
+        "max": 67.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_10.tiff": {
+        "max": 171.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_11.tiff": {
+        "max": 6.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_12.tiff": {
+        "max": 9.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_13.tiff": {
+        "max": 135.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_14.tiff": {
+        "max": 56.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_15.tiff": {
+        "max": 57.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_16.tiff": {
+        "max": 3.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_17.tiff": {
+        "max": 104.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_18.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_20.tiff": {
+        "max": 16.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_22.tiff": {
+        "max": 24.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_23.tiff": {
+        "max": 132.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_25.tiff": {
+        "max": 126.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_26.tiff": {
+        "max": 136.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_27.tiff": {
+        "max": 39.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_28.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_29.tiff": {
+        "max": 162.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_3.tiff": {
+        "max": 12.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_31.tiff": {
+        "max": 103.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_32.tiff": {
+        "max": 89.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_33.tiff": {
+        "max": 18.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_34.tiff": {
+        "max": 17.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_35.tiff": {
+        "max": 181.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_36.tiff": {
+        "max": 71.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_37.tiff": {
+        "max": 87.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_38.tiff": {
+        "max": 172.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_4.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_40.tiff": {
+        "max": 107.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_5.tiff": {
+        "max": 17.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_6.tiff": {
+        "max": 158.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_7.tiff": {
+        "max": 147.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-Line/STED/c2_8.tiff": {
+        "max": 27.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-New/STED/c2_0.tiff": {
+        "max": 144.0,
+        "min": 1.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-New/STED/c2_1.tiff": {
+        "max": 84.0,
+        "min": 2.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-New/STED/c2_3.tiff": {
+        "max": 350.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Phalloidin-STAR635_SMI31-STAR580-Exc-Dwelltime-New/STED/c2_4.tiff": {
+        "max": 30.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/0.tiff": {
+        "max": 75.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/1.tiff": {
+        "max": 280.0,
+        "min": 1.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/10.tiff": {
+        "max": 8.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/11.tiff": {
+        "max": 304.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/12.tiff": {
+        "max": 89.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/13.tiff": {
+        "max": 35.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/15.tiff": {
+        "max": 354.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/16.tiff": {
+        "max": 55.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/17.tiff": {
+        "max": 128.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/18.tiff": {
+        "max": 60.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/19.tiff": {
+        "max": 79.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/2.tiff": {
+        "max": 55.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/21.tiff": {
+        "max": 113.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/22.tiff": {
+        "max": 40.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/23.tiff": {
+        "max": 31.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/24.tiff": {
+        "max": 52.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/25.tiff": {
+        "max": 84.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/26.tiff": {
+        "max": 24.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/28.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/30.tiff": {
+        "max": 61.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/31.tiff": {
+        "max": 57.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/32.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/33.tiff": {
+        "max": 87.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/34.tiff": {
+        "max": 88.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/35.tiff": {
+        "max": 58.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/36.tiff": {
+        "max": 83.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/37.tiff": {
+        "max": 56.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/39.tiff": {
+        "max": 58.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/4.tiff": {
+        "max": 94.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/40.tiff": {
+        "max": 72.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/42.tiff": {
+        "max": 88.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/43.tiff": {
+        "max": 72.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/45.tiff": {
+        "max": 68.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/46.tiff": {
+        "max": 48.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/47.tiff": {
+        "max": 72.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/48.tiff": {
+        "max": 119.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/49.tiff": {
+        "max": 52.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/5.tiff": {
+        "max": 52.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/50.tiff": {
+        "max": 202.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/51.tiff": {
+        "max": 51.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/52.tiff": {
+        "max": 69.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/53.tiff": {
+        "max": 67.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/6.tiff": {
+        "max": 23.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/7.tiff": {
+        "max": 36.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/PhalloidinS635_QualityNet-1/STED/8.tiff": {
+        "max": 63.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/0.tiff": {
+        "max": 18.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/1.tiff": {
+        "max": 30.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/10.tiff": {
+        "max": 20.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/11.tiff": {
+        "max": 392.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/12.tiff": {
+        "max": 108.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/13.tiff": {
+        "max": 26.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/14.tiff": {
+        "max": 18.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/15.tiff": {
+        "max": 34.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/16.tiff": {
+        "max": 128.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/17.tiff": {
+        "max": 5.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/18.tiff": {
+        "max": 584.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/19.tiff": {
+        "max": 61.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/2.tiff": {
+        "max": 63.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/20.tiff": {
+        "max": 113.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/21.tiff": {
+        "max": 73.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/22.tiff": {
+        "max": 85.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/23.tiff": {
+        "max": 93.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/24.tiff": {
+        "max": 308.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/25.tiff": {
+        "max": 90.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/26.tiff": {
+        "max": 166.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/27.tiff": {
+        "max": 74.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/28.tiff": {
+        "max": 104.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/29.tiff": {
+        "max": 188.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/3.tiff": {
+        "max": 6.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/30.tiff": {
+        "max": 24.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/31.tiff": {
+        "max": 113.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/32.tiff": {
+        "max": 58.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/33.tiff": {
+        "max": 39.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/34.tiff": {
+        "max": 78.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/35.tiff": {
+        "max": 34.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/36.tiff": {
+        "max": 121.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/37.tiff": {
+        "max": 79.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/38.tiff": {
+        "max": 277.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/39.tiff": {
+        "max": 114.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/4.tiff": {
+        "max": 39.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/40.tiff": {
+        "max": 59.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/42.tiff": {
+        "max": 76.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/44.tiff": {
+        "max": 87.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/45.tiff": {
+        "max": 24.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/46.tiff": {
+        "max": 22.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/47.tiff": {
+        "max": 65.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/48.tiff": {
+        "max": 54.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/49.tiff": {
+        "max": 82.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/5.tiff": {
+        "max": 63.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/50.tiff": {
+        "max": 154.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/51.tiff": {
+        "max": 93.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/53.tiff": {
+        "max": 37.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/55.tiff": {
+        "max": 75.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/56.tiff": {
+        "max": 50.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/57.tiff": {
+        "max": 51.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/58.tiff": {
+        "max": 76.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/6.tiff": {
+        "max": 113.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/60.tiff": {
+        "max": 79.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/61.tiff": {
+        "max": 109.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/62.tiff": {
+        "max": 76.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/63.tiff": {
+        "max": 67.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/64.tiff": {
+        "max": 196.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/65.tiff": {
+        "max": 98.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/7.tiff": {
+        "max": 26.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/8.tiff": {
+        "max": 291.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    },
+    "/Tubulin_A594/STED/9.tiff": {
+        "max": 66.0,
+        "min": 0.0,
+        "num_crops": 0,
+        "shape": [
+            224,
+            224
+        ]
+    }
+}
