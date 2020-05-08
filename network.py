@@ -175,6 +175,7 @@ class UNet(nn.Module):
                 # Send model on GPU
                 if cuda:
                     X = X.cuda()
+                    y = y.cuda()
 
                 # New batch we reset the optimizer
                 optimizer.zero_grad()
@@ -204,6 +205,7 @@ class UNet(nn.Module):
                 # Send on GPU
                 if cuda:
                     X = X.cuda()
+                    y = y.cuda()
 
                 # Prediction and loss computation
                 pred = self.forward(X)
