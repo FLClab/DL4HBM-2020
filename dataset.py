@@ -1,8 +1,9 @@
 
 import numpy
 import os
+import warnings
 
-from skimage import draw, io
+from skimage import draw, io, morphology, measure
 from matplotlib import pyplot
 
 def load_poly(path):
@@ -61,10 +62,81 @@ def extract_rawdata(path):
                 images.append(image)
                 labels.append(label)
     images, labels = map(numpy.array, (images, labels))
-    numpy.savez_compressed(os.path.join(path, "data.npz"),
-                            images=images, labels=labels)
+    # numpy.savez_compressed(os.path.join(path, "data.npz"),
+    #                         images=images, labels=labels)
+
+class LabelModifier():
+    def __init__(self, method=None):
+        # Verifies if attribute exists, else defaults in hungarian
+        if isinstance(method, type(None)):
+            self.apply_method = lambda l : l
+        else:
+            try:
+                self.apply_method = getattr(self, f"_apply_{method}")
+            except AttributeError:
+                warnings.warn(f"The chosen method `{method}` does not exist. Defaults in `None`.", category=UserWarning)
+                self.apply_method = lambda l : l
+
+    def apply(self, label, **kwargs):
+        return self.apply_method(label, **kwargs)
+
+    def _apply_dilation(self, label, **kwargs):
+        selem = morphology.square(**kwargs)
+        return morphology.binary_dilation(label, selem=selem)
+
+    def _apply_bbox(self, label, **kwargs):
+        labeled_img = measure.label(label)
+        regionprops = measure.regionprops(labeled_img)
+        output_mask = numpy.zeros_like(label)
+        for regionprop in regionprops:
+            output_mask[regionprop.slice] = 1
+        return output_mask
+
+    def _apply_center_circle(self, label, **kwargs):
+        labeled_img = measure.label(label)
+        regionprops = measure.regionprops(labeled_img)
+        output_mask = numpy.zeros_like(label)
+        for regionprop in regionprops:
+            rr, cc = draw.disk(regionprop.centroid, **kwargs, shape=label.shape)
+            output_mask[rr, cc] = 1
+        return output_mask
+
 
 if __name__ == "__main__":
 
     path = "./raw_data"
-    extract_rawdata(path)
+    # extract_rawdata(path)
+    data = numpy.load("./raw_data/data.npz")
+    images, labels = data["images"], data["labels"]
+
+    modified_labels = []
+    dilation = 5
+    for image, label in zip(images, labels):
+        labelMod = LabelModifier(method="dilation")
+        label_mod = labelMod.apply(label, width=dilation)
+
+        modified_labels.append(label_mod)
+    numpy.savez_compressed("./raw_data/data_dilation{}.npz".format(dilation),
+        images=images, labels=numpy.array(labels)
+    )
+
+    modified_labels = []
+    for image, label in zip(images, labels):
+        labelMod = LabelModifier(method="bbox")
+        label_mod = labelMod.apply(label)
+
+        modified_labels.append(label_mod)
+    numpy.savez_compressed("./raw_data/data_bbox.npz",
+        images=images, labels=numpy.array(labels)
+    )
+
+    modified_labels = []
+    radius = 25
+    for image, label in zip(images, labels):
+        labelMod = LabelModifier(method="center_circle")
+        label_mod = labelMod.apply(label, radius=radius)
+
+        modified_labels.append(label_mod)
+    numpy.savez_compressed("./raw_data/data_center-circle{}.npz".format(radius),
+        images=images, labels=numpy.array(labels)
+    )
