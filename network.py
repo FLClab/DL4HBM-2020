@@ -307,7 +307,7 @@ class UNet(nn.Module):
                 pred = pred.data.numpy()
             y = y.data.numpy()
 
-            yield X
+            yield X, y, pred
 
             # To avoid memory leak
             del X, y, pred
