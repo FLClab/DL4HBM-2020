@@ -42,7 +42,7 @@ class NumpyDataset(Dataset):
         x = torch.tensor(x, dtype=torch.float)
         y = torch.tensor(y, dtype=torch.long)
 
-        return x, y
+        return x, y, index
 
     def __len__(self):
         return len(self.data)

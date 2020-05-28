@@ -174,7 +174,7 @@ class UNet(nn.Module):
 
             # training
             self.train()
-            for X, y in tqdm(train_loader, leave=False, desc="Training"):
+            for X, y, index in tqdm(train_loader, leave=False, desc="Training"):
 
                 # Verifies the shape of the data
                 if X.ndim == 3:
@@ -204,7 +204,7 @@ class UNet(nn.Module):
 
             # validation
             self.eval()
-            for X, y in tqdm(valid_loader, leave=False, desc="Validation"):
+            for X, y, index in tqdm(valid_loader, leave=False, desc="Validation"):
 
                 # Verifies the shape of the data
                 if X.ndim == 3:
@@ -286,7 +286,7 @@ class UNet(nn.Module):
         predict_loader = loader.get_loader(data[idx], targets[idx], batch_size=batch_size, validation=True)
 
         self.eval()
-        for X, y in tqdm(predict_loader, leave=False, desc="Prediction"):
+        for X, y, index in tqdm(predict_loader, leave=False, desc="Prediction"):
 
             # Verifies the shape of the data
             if X.ndim == 3:
@@ -307,7 +307,7 @@ class UNet(nn.Module):
                 pred = pred.data.numpy()
             y = y.data.numpy()
 
-            yield X, y, pred
+            yield X, y, pred, index
 
             # To avoid memory leak
             del X, y, pred
@@ -316,7 +316,7 @@ class UNet(nn.Module):
 if __name__ == "__main__":
 
     epochs = 250
-    cuda = True
+    cuda = False
 
     # Training polygonal bounding boxes
     data = numpy.load("raw_data/data.npz")
