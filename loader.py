@@ -14,7 +14,7 @@ class NumpyDataset(Dataset):
         self.validation = validation # import if transforms are used
 
     def __getitem__(self, index):
-        x = self.data[index]
+        x = self.data[index].astype(numpy.float32)
         x = (x - x.mean()) / x.std()
         y = self.targets[index]
 
