@@ -312,14 +312,42 @@ class UNet(nn.Module):
 
 if __name__ == "__main__":
 
+    epochs = 250
+    cuda = True
+
+    # Training polygonal bounding boxes
     data = numpy.load("raw_data/data.npz")
     images, targets = data["images"], data["labels"]
-    train_idx, valid_idx = numpy.arange(0, 400), numpy.arange(400, len(data["images"]))
-    train_idx, valid_idx, test_idx = loader.get_idx(images, train_ratio=0.7)
+    train_idx, valid_idx, test_idx = loader.get_idx(images)
     model = UNet(in_channels=1, out_channels=2)
-    # model.train_model(images, targets, train_idx, valid_idx, epochs=15, cuda=True)
+    model.train_model(images, targets, train_idx, valid_idx, epochs=epochs, cuda=cuda,
+                        save_folder="/home-local/DL4HBM-2020/polygonal_bbox")
 
-    model.load_model(cuda=True)
+    # Training bounding boxes
+    data = numpy.load("raw_data/data_bbox.npz")
+    images, targets = data["images"], data["labels"]
+    train_idx, valid_idx, test_idx = loader.get_idx(images)
+    model = UNet(in_channels=1, out_channels=2)
+    model.train_model(images, targets, train_idx, valid_idx, epochs=epochs, cuda=cuda,
+                        save_folder="/home-local/DL4HBM-2020/bbox")
 
-    for pred in model.predict(images, targets, valid_idx, cuda=True):
-        print(pred.shape)
+    # Training center-circle25
+    data = numpy.load("raw_data/data_center-circle25.npz")
+    images, targets = data["images"], data["labels"]
+    train_idx, valid_idx, test_idx = loader.get_idx(images)
+    model = UNet(in_channels=1, out_channels=2)
+    model.train_model(images, targets, train_idx, valid_idx, epochs=epochs, cuda=cuda,
+                        save_folder="/home-local/DL4HBM-2020/center-circle25")
+
+    # Training dilation of polygonal bounding boxes
+    data = numpy.load("raw_data/data_dilation5.npz")
+    images, targets = data["images"], data["labels"]
+    train_idx, valid_idx, test_idx = loader.get_idx(images)
+    model = UNet(in_channels=1, out_channels=2)
+    model.train_model(images, targets, train_idx, valid_idx, epochs=epochs, cuda=cuda,
+                        save_folder="/home-local/DL4HBM-2020/dilation5")
+
+    # model.load_model(cuda=True)
+    #
+    # for pred in model.predict(images, targets, valid_idx, cuda=True):
+    #     print(pred.shape)
