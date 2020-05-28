@@ -7,7 +7,7 @@ import random
 from torch.utils.data import Dataset, DataLoader
 
 class NumpyDataset(Dataset):
-    def __init__(self, data, targets, validation, probabiilty=0.5):
+    def __init__(self, data, targets, validation, probability=0.5):
         super(NumpyDataset, self).__init__()
 
         self.data = data
@@ -28,7 +28,7 @@ class NumpyDataset(Dataset):
                 scale = numpy.clip(scale, 0.25, 1.25)
                 x = x * scale
 
-            # left right flup
+            # left right flip
             if random.random() < self.probability:
                 x = numpy.fliplr(x).copy()
                 y = numpy.fliplr(y).copy()
@@ -36,8 +36,8 @@ class NumpyDataset(Dataset):
             # 90degree rotation
             if random.random() < self.probability:
                 k = random.randint(1, 3)
-                x = numpy.rot90(x, k=k)
-                y = numpy.rot90(y, k=k)
+                x = numpy.rot90(x, k=k).copy()
+                y = numpy.rot90(y, k=k).copy()
 
         x = torch.tensor(x, dtype=torch.float)
         y = torch.tensor(y, dtype=torch.long)
@@ -45,7 +45,7 @@ class NumpyDataset(Dataset):
         return x, y
 
     def __len__(self):
-        return len(self.data)labels
+        return len(self.data)
 
 def get_loader(data, targets, batch_size=16, validation=False):
     """
