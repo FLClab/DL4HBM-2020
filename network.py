@@ -315,8 +315,8 @@ class UNet(nn.Module):
 
 if __name__ == "__main__":
 
-    epochs = 250
-    cuda = False
+    epochs = 500
+    cuda = True
 
     # Training polygonal bounding boxes
     data = numpy.load("raw_data/data.npz")
