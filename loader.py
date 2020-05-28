@@ -62,7 +62,7 @@ def get_idx(data, train_ratio=0.7, force_new_idx=False):
     valid_idx, test_idx = other_idx[:len(other_idx)//2],  other_idx[len(other_idx)//2:]
 
     # Save the new generated indices
-    numpy.savez("./raw_data/idx.npz",
-                train_idx=train_idx, valid_idx=valid_idx, test_idx=test_idx)
+    # numpy.savez("./raw_data/idx.npz",
+    #             train_idx=train_idx, valid_idx=valid_idx, test_idx=test_idx)
 
     return train_idx, valid_idx, test_idx
