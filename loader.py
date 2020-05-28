@@ -10,7 +10,7 @@ class NumpyDataset(Dataset):
 
         self.data = data
         self.targets = targets
-        self.validation = validation # import is transforms are used
+        self.validation = validation # import if transforms are used
 
     def __getitem__(self, index):
         x = self.data[index]
@@ -34,4 +34,18 @@ def get_loader(data, targets, batch_size=16, validation=False):
     """
     dset = NumpyDataset(data, targets, validation=validation)
     return DataLoader(dset, batch_size=batch_size, shuffle=True, num_workers=2,
-                        drop_last=True)
+                        drop_last=False)
+
+def get_idx(data, train_ratio=0.8):
+    """
+    Gets the training, validation and testing indices. By default validation and testing
+    are 50/50 split from 1 - train_ratio
+
+    :param data: A `numpy.ndarray` of the input data
+    :param train_ratio: The training ratio
+    """
+    train_idx = numpy.random.choice(len(data), size=int(train_ratio * len(data)), replace=False)
+    other_idx = numpy.setdiff1d(numpy.arange(len(data)), train_idx)
+    numpy.random.shuffle(other_idx)
+    valid_idx, test_idx = other_idx[:len(other_idx)//2],  other_idx[len(other_idx)//2:]
+    return train_idx, valid_idx, test_idx

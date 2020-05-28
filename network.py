@@ -3,6 +3,7 @@ import numpy
 import glob
 import os
 import torch
+import pickle
 
 from torch import nn
 from collections import defaultdict
@@ -128,22 +129,27 @@ class UNet(nn.Module):
         return x
 
     def train_model(self, data, targets, train_idx, valid_idx, epochs=100, cuda=False,
-                    lr=1e-4):
+                    lr=1e-4, batch_size=64, save_folder="./chkpt"):
         """
         Implements a train method for the UNet architecture
 
-        :param data_train: A `numpy.ndarray` of training data
-        :param data_valid: A `numpy.ndarray` of validation data
+        :param data: A `numpy.ndarray` of data
+        :param tragets: A `numpy.ndarray` of target data
         :param train_idx: A list of index to use for training
         :param valid_idx: A list of index to use for validation
         """
+        # Creation of save_folder
+        self.save_folder = save_folder
+        if not os.path.isdir(self.save_folder):
+            os.makedirs(self.save_folder, exist_ok=False)
+
         # Send model on GPU
         if cuda:
             self = self.cuda()
 
         # Creates the loaders
-        train_loader = loader.get_loader(data[train_idx], targets[train_idx], batch_size=64)
-        valid_loader = loader.get_loader(data[valid_idx], targets[valid_idx], batch_size=64, validation=True)
+        train_loader = loader.get_loader(data[train_idx], targets[train_idx], batch_size=batch_size)
+        valid_loader = loader.get_loader(data[valid_idx], targets[valid_idx], batch_size=batch_size, validation=True)
 
         # Creation of the optimizer
         optimizer = torch.optim.Adam(self.parameters(), lr=lr)
@@ -159,7 +165,9 @@ class UNet(nn.Module):
         # To keep track of the network generalizing the most
         min_valid_loss = numpy.inf
 
-        for epoch in trange(epochs, desc="Epochs"):
+        for epoch in range(epochs):
+
+            print("[----] Starting epoch {}/{}".format(epoch + 1, epochs))
 
             # Keep track of the loss of train and test
             statLossTrain, statLossTest = [], []
@@ -225,10 +233,93 @@ class UNet(nn.Module):
                                  (numpy.mean, numpy.median, numpy.min, numpy.std)):
                 self.stats[key].append(func(statLossTest))
 
+            if self.stats["testMean"][-1] < min_valid_loss:
+                print("[!!!!]   New best model.")
+                self.save_model(optimizer, epoch=epoch, best_model=True)
+                min_valid_loss = self.stats["testMean"][-1]
+
+            if epoch % 10 == 0:
+                self.save_model(optimizer, epoch=epoch, best_model=False)
+
+    def save_model(self, optimizer, epoch, best_model):
+        """
+        Saves the current epoch model
+
+        :param optimizer: The current state of the optimizer
+        :param epoch: The current epoch
+        :param best_model: Wheter the model is currently the best model
+        """
+        print("[----]   Saving current network state")
+        epoch = "" if best_model else f"_{epoch}"
+        torch.save(self.state_dict(), os.path.join(self.save_folder, f"params{epoch}.net"))
+        torch.save(optimizer.state_dict(), os.path.join(self.save_folder, f"optimizer{epoch}.data"))
+        pickle.dump(self.stats, open(os.path.join(self.save_folder, f"statsCkpt{epoch}.pkl"), "wb"), protocol=pickle.HIGHEST_PROTOCOL)
+
+    def load_model(self, save_folder="./chkpt", cuda=False, epoch=None):
+        """
+        Loads a previous model
+
+        :param save_folder: The path to the model
+        """
+        epoch = "" if isinstance(epoch, type(None)) else f"_{epoch}"
+        net_params = torch.load(os.path.join(save_folder, f"params{epoch}.net"))
+        # optim_params = torch.load(os.path.join(save_folder, f"optimizer{epoch}.net"))
+
+        # Loads state dict of the model and puts it in evaluation mode
+        self.load_state_dict(net_params)
+        self.eval()
+
+        # Send on GPU
+        if cuda:
+            self = self.cuda()
+
+    def predict(self, data, targets, idx=None, batch_size=64, cuda=False):
+        """
+        Infers from the given data
+
+        :param data: A `numpy.ndarray` of data
+        :param tragets: A `numpy.ndarray` of target data
+        :param idx: A list of index to use for training
+        """
+        if isinstance(idx, type(None)):
+            idx = numpy.arange(len(data))
+        predict_loader = loader.get_loader(data[idx], targets[idx], batch_size=batch_size, validation=True)
+
+        self.eval()
+        for X, y in tqdm(predict_loader, leave=False, desc="Prediction"):
+
+            # Verifies the shape of the data
+            if X.ndim == 3:
+                X = X.unsqueeze(1)
+
+            # Send on GPU
+            if cuda:
+                X = X.cuda()
+
+            # Prediction and loss computation
+            pred = self.forward(X)
+
+            if cuda:
+                pred = pred.cpu().data.numpy()
+            else:
+                pred = pred.data.numpy()
+
+            yield pred
+
+            # To avoid memory leak
+            del X, y, pred
+
+
 if __name__ == "__main__":
 
     data = numpy.load("raw_data/data.npz")
     images, targets = data["images"], data["labels"]
     train_idx, valid_idx = numpy.arange(0, 400), numpy.arange(400, len(data["images"]))
+    train_idx, valid_idx, test_idx = loader.get_idx(images, train_ratio=0.7)
     model = UNet(in_channels=1, out_channels=2)
-    model.train_model(images, targets, train_idx, valid_idx)
+    # model.train_model(images, targets, train_idx, valid_idx, epochs=15, cuda=True)
+
+    model.load_model(cuda=True)
+
+    for pred in model.predict(images, targets, valid_idx, cuda=True):
+        print(pred.shape)
