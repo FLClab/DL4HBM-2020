@@ -117,7 +117,7 @@ if __name__ == "__main__":
 
         modified_labels.append(label_mod)
     numpy.savez_compressed("./raw_data/data_dilation{}.npz".format(dilation),
-        images=images, labels=numpy.array(labels)
+        images=images, labels=numpy.array(modified_labels)
     )
 
     modified_labels = []
@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
         modified_labels.append(label_mod)
     numpy.savez_compressed("./raw_data/data_bbox.npz",
-        images=images, labels=numpy.array(labels)
+        images=images, labels=numpy.array(modified_labels)
     )
 
     modified_labels = []
@@ -138,5 +138,5 @@ if __name__ == "__main__":
 
         modified_labels.append(label_mod)
     numpy.savez_compressed("./raw_data/data_center-circle{}.npz".format(radius),
-        images=images, labels=numpy.array(labels)
+        images=images, labels=numpy.array(modified_labels)
     )
