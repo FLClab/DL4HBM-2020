@@ -300,11 +300,14 @@ class UNet(nn.Module):
             pred = self.forward(X)
 
             if cuda:
+                X = X.cpu().data.numpy()
                 pred = pred.cpu().data.numpy()
             else:
+                X = X.data.numpy()
                 pred = pred.data.numpy()
+            y = y.data.numpy()
 
-            yield pred
+            yield X
 
             # To avoid memory leak
             del X, y, pred
