@@ -2,21 +2,42 @@
 import numpy
 import torch
 import os
+import random
 
 from torch.utils.data import Dataset, DataLoader
 
 class NumpyDataset(Dataset):
-    def __init__(self, data, targets, validation):
+    def __init__(self, data, targets, validation, probabiilty=0.5):
         super(NumpyDataset, self).__init__()
 
         self.data = data
         self.targets = targets
         self.validation = validation # import if transforms are used
+        self.probability = probability
 
     def __getitem__(self, index):
         x = self.data[index].astype(numpy.float32)
         x = (x - x.mean()) / x.std()
         y = self.targets[index]
+
+        # Apply small data augmentation
+        if not self.validation:
+            # intensity scale
+            if random.random() < self.probability:
+                scale = numpy.random.normal(0.75, 0.25, size=1)
+                scale = numpy.clip(scale, 0.25, 1.25)
+                x = x * scale
+
+            # left right flup
+            if random.random() < self.probability:
+                x = numpy.fliplr(x).copy()
+                y = numpy.fliplr(y).copy()
+
+            # 90degree rotation
+            if random.random() < self.probability:
+                k = random.randint(1, 3)
+                x = numpy.rot90(x, k=k)
+                y = numpy.rot90(y, k=k)
 
         x = torch.tensor(x, dtype=torch.float)
         y = torch.tensor(y, dtype=torch.long)
@@ -24,7 +45,7 @@ class NumpyDataset(Dataset):
         return x, y
 
     def __len__(self):
-        return len(self.data)
+        return len(self.data)labels
 
 def get_loader(data, targets, batch_size=16, validation=False):
     """
