@@ -319,9 +319,15 @@ if __name__ == "__main__":
     cuda = True
 
     # Training polygonal bounding boxes
-    data = numpy.load("raw_data/data.npz")
+    data = numpy.load("raw_data/data_polygonal_bbox.npz")
     images, targets = data["images"], data["labels"]
     train_idx, valid_idx, test_idx = loader.get_idx(images)
+
+    minimas = images[train_idx].min(axis=(1, 2))
+    maximas = images[train_idx].max(axis=(1, 2))
+    minmax = (numpy.mean(minimas), numpy.mean(maximas) + 3 * numpy.std(maximas))
+    numpy.save("raw_data/minmax.npy", minmax)
+
     model = UNet(in_channels=1, out_channels=2)
     model.train_model(images, targets, train_idx, valid_idx, epochs=epochs, cuda=cuda,
                         save_folder="/home-local/DL4HBM-2020/polygonal_bbox")

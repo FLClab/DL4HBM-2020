@@ -7,17 +7,20 @@ import random
 from torch.utils.data import Dataset, DataLoader
 
 class NumpyDataset(Dataset):
-    def __init__(self, data, targets, validation, probability=0.5):
+    def __init__(self, data, targets, validation, probability=0.5,
+                    minmax=(0, 255)):
         super(NumpyDataset, self).__init__()
 
         self.data = data
         self.targets = targets
         self.validation = validation # import if transforms are used
         self.probability = probability
+        self.minmax = minmax
 
     def __getitem__(self, index):
         x = self.data[index].astype(numpy.float32)
-        x = (x - x.mean()) / x.std()
+        # x = (x - x.mean()) / x.std()
+        x = (x - self.minmax[0]) / (self.minmax[1] - self.minmax[0])
         y = self.targets[index]
 
         # Apply small data augmentation
@@ -47,7 +50,7 @@ class NumpyDataset(Dataset):
     def __len__(self):
         return len(self.data)
 
-def get_loader(data, targets, batch_size=16, validation=False):
+def get_loader(data, targets, batch_size=16, validation=False, minmax=(0, 255)):
     """
     Creates a torch.utils.data.DataLoader with the given data and targets
 
@@ -56,7 +59,7 @@ def get_loader(data, targets, batch_size=16, validation=False):
 
     :returns : A `DataLoader`
     """
-    dset = NumpyDataset(data, targets, validation=validation)
+    dset = NumpyDataset(data, targets, validation=validation, minmax=minmax)
     return DataLoader(dset, batch_size=batch_size, shuffle=True, num_workers=2,
                         drop_last=False)
 
