@@ -273,7 +273,7 @@ class UNet(nn.Module):
         if cuda:
             self = self.cuda()
 
-    def predict(self, data, targets, idx=None, batch_size=64, cuda=False):
+    def predict(self, data, targets, idx=None, batch_size=64, cuda=False, minmax=(0, 255)):
         """
         Infers from the given data
 
@@ -283,7 +283,8 @@ class UNet(nn.Module):
         """
         if isinstance(idx, type(None)):
             idx = numpy.arange(len(data))
-        predict_loader = loader.get_loader(data[idx], targets[idx], batch_size=batch_size, validation=True)
+        predict_loader = loader.get_loader(data[idx], targets[idx], batch_size=batch_size, validation=True,
+                                            minmax=minmax)
 
         self.eval()
         for X, y, index in tqdm(predict_loader, leave=False, desc="Prediction"):
