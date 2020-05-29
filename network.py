@@ -335,12 +335,12 @@ if __name__ == "__main__":
                         save_folder="/home-local/DL4HBM-2020/bbox")
 
     # Training center-circle25
-    data = numpy.load("raw_data/data_center-circle25.npz")
-    images, targets = data["images"], data["labels"]
-    train_idx, valid_idx, test_idx = loader.get_idx(images)
-    model = UNet(in_channels=1, out_channels=2)
-    model.train_model(images, targets, train_idx, valid_idx, epochs=epochs, cuda=cuda,
-                        save_folder="/home-local/DL4HBM-2020/center-circle25")
+    # data = numpy.load("raw_data/data_center-circle25.npz")
+    # images, targets = data["images"], data["labels"]
+    # train_idx, valid_idx, test_idx = loader.get_idx(images)
+    # model = UNet(in_channels=1, out_channels=2)
+    # model.train_model(images, targets, train_idx, valid_idx, epochs=epochs, cuda=cuda,
+    #                     save_folder="/home-local/DL4HBM-2020/center-circle25")
 
     # Training dilation of polygonal bounding boxes
     data = numpy.load("raw_data/data_dilation5.npz")
