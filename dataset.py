@@ -67,7 +67,7 @@ def extract_rawdata(path):
 
 class LabelModifier():
     def __init__(self, method=None):
-        # Verifies if attribute exists, else defaults in hungarian
+        # Verifies if attribute exists, else defaults in None
         if isinstance(method, type(None)):
             self.apply_method = lambda l : l
         else:
