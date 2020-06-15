@@ -92,9 +92,8 @@ class UNet(nn.Module):
     :param out_channels: Number of output channels (i.e. number of classes)
     :param number_filter: Number of filters in the first layer (2 ** number_filter)
     :param depth: Depth of the network
-    :param size: The size of the crops that are fed to the network
     """
-    def __init__(self, in_channels, out_channels, number_filter=4, depth=4, size=244):
+    def __init__(self, in_channels, out_channels, number_filter=4, depth=4):
         super(UNet, self).__init__()
 
         self.input_conv = DoubleConvolver(in_channels=in_channels, out_channels=2**number_filter)
@@ -135,8 +134,13 @@ class UNet(nn.Module):
 
         :param data: A `numpy.ndarray` of data
         :param tragets: A `numpy.ndarray` of target data
-        :param train_idx: A list of index to use for training
-        :param valid_idx: A list of index to use for validation
+        :param train_idx: A `list` of index to use for training
+        :param valid_idx: A `list` of index to use for validation
+        :param epochs: An `int` of the number of epochs to train the network 
+        :param cuda: A `bool` wheter to send the model on GPU 
+        :param lr: A `float` of the learning rate 
+        :param batch_size: An `int` of the batch size 
+        :param save_folder: A `str` path where to save the model 
         """
         # Creation of save_folder
         self.save_folder = save_folder
@@ -259,7 +263,9 @@ class UNet(nn.Module):
         """
         Loads a previous model
 
-        :param save_folder: The path to the model
+        :param save_folder: A `str` of the path of the model 
+        :param cuda: A `bool` wheter to load the model on the GPU
+        :param epoch: An `int` of the epoch number to load. None results in best model
         """
         epoch = "" if isinstance(epoch, type(None)) else f"_{epoch}"
         net_params = torch.load(os.path.join(save_folder, f"params{epoch}.net"))
@@ -279,7 +285,15 @@ class UNet(nn.Module):
 
         :param data: A `numpy.ndarray` of data
         :param tragets: A `numpy.ndarray` of target data
-        :param idx: A list of index to use for training
+        :param idx: A `list` of index to use for prediction
+        :param batch_size: An `int` of the batch size 
+        :param cuda: A `bool` wheter to load the model on the GPU
+        :param minmax: A `tuple` of normalization 
+        
+        :returns : A `torch.tensor` of the images
+        :returns : A `torch.tensor` of the targets
+        :returns : A `torch.tensor` of the predictions
+        :returns : A `torch.tensor` of the indices 
         """
         if isinstance(idx, type(None)):
             idx = numpy.arange(len(data))
