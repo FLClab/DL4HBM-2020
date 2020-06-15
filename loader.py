@@ -9,11 +9,20 @@ from torch.utils.data import Dataset, DataLoader
 class NumpyDataset(Dataset):
     def __init__(self, data, targets, validation, probability=0.5,
                     minmax=(0, 255)):
+        """
+        Instantiates the `NumpyDataset` class
+        
+        :param data: A `numpy.ndarray` of data with shape [N, H, W]
+        :param targets: A `numpy.ndarray` of targets with shape [N, H, W]
+        :param validation: A `bool` wheter the dataset is in validation mode 
+        :param probability: A `float` of the probability to apply data augmentation 
+        :param minmax: A `tuple` of normalization value
+        """
         super(NumpyDataset, self).__init__()
 
         self.data = data
         self.targets = targets
-        self.validation = validation # import if transforms are used
+        self.validation = validation
         self.probability = probability
         self.minmax = minmax
 
