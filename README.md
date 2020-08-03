@@ -12,11 +12,19 @@ The dataset used in the notebook contains images of the axonal F-actin periodica
 
 If you use the provided dataset, codes and examples please make sure to reference the following paper.
 ```
-@article{lavoie2020neuronal,
-  title={Neuronal activity remodels the F-actin based submembrane lattice in dendrites but not axons of hippocampal neurons},
-  author={Lavoie-Cardinal, Flavie and Bilodeau, Anthony and Lemieux, Mado and Gardner, Marc-Andr{\'e} and Wiesner, Theresa and Laram{\'e}e, Gabrielle and Gagn{\'e}, Christian and De Koninck, Paul},
-  journal={bioRxiv},
-  year={2020},
-  publisher={Cold Spring Harbor Laboratory}
+@article{lavoie-cardinalNeuronal2020,
+  title = {Neuronal Activity Remodels the {{F}}-Actin Based Submembrane Lattice in Dendrites but Not Axons of Hippocampal Neurons},
+  author = {{Lavoie-Cardinal}, Flavie and Bilodeau, Anthony and Lemieux, Mado and Gardner, Marc-Andr{\'e} and Wiesner, Theresa and Laram{\'e}e, Gabrielle and Gagn{\'e}, Christian and De Koninck, Paul},
+  year = {2020},
+  month = jul,
+  volume = {10},
+  pages = {11960},
+  publisher = {{Nature Publishing Group}},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-020-68180-2},
+  copyright = {2020 The Author(s)},
+  journal = {Scientific Reports},
+  language = {en},
+  number = {1}
 }
 ```
