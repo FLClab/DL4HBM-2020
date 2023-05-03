@@ -516,7 +516,7 @@ class UNet(nn.Module):
             target = target[:, size : -size, size:-size]
             prediction = prediction[:, size : -size, size:-size]
 
-            yield image, target, prediction
+            yield image_loader.data[index], image, target, prediction
 
 
 if __name__ == "__main__":
