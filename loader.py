@@ -7,8 +7,6 @@ import tifffile
 
 from torch.utils.data import Dataset, DataLoader
 
-from dlutils.sampler import OnTheFlySampler
-
 ACTIN = 0
 
 class NormalizationLayer:

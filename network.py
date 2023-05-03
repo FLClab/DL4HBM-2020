@@ -12,8 +12,84 @@ from tqdm.auto import tqdm, trange
 
 import loader
 
-from dlutils.utils import PredictionBuilder
+class PredictionBuilder:
+    """
+    This class is used to create the final prediction from the predictions
+    that are infered by the network. This class stores the predictions in an output
+    array to avoid memory overflow with the method `add_predictions` and then
+    computes the mean prediction of the overlap with the `return_prediction` method.
 
+    :param shape: The shape of the image
+    :param size: The size of the crops
+    """
+    def __init__(self, shape, size, num_classes=2):
+        # Assign member variables
+        self.shape = shape
+        self.size = size
+
+        # Creates the output arrays
+        self.pred = numpy.zeros((num_classes, self.shape[0] + self.size, self.shape[1] + self.size), dtype=numpy.float32)
+        self.pixels = numpy.zeros((self.shape[0] + self.size, self.shape[1] + self.size), dtype=numpy.float32)
+
+    def add_predictions(self, predictions, positions):
+        """
+        Method to store the predictions in the output arrays. We suppose positions
+        to be central on crops
+
+        :param predictions: A `numpy.ndarray` of predictions with size (batch_size, features, H, W)
+        :param positions: A `numpy.ndarray` of positions of crops with size (batch_size, 2)
+        """
+        # Verifies the shape of predictions
+        if predictions.ndim != 4:
+            # The feature channel has a high probabilty of missing
+            predictions = predictions[:, numpy.newaxis, ...]
+        for pred, (j, i) in zip(predictions, positions):
+
+            # Stores the predictions in output arrays
+            self.pred[:, j - self.size // 2 : j + self.size // 2, i - self.size // 2 : i + self.size // 2] += pred
+            self.pixels[j - self.size // 2 : j + self.size // 2, i - self.size // 2 : i + self.size // 2] += 1
+
+    def add_predictions_ji(self, prediction, j, i):
+        """
+        Method to store the predictions in the output array at the corresponding
+        position. We suppose a central postion of the crop
+
+        :param predictions: A `numpy.ndarray` of prediction with size (features, H, W)
+        :param j: An `int` of the row position
+        :param i: An `int` of the column position
+        """
+        # Verifies the shape of prediction
+        if prediction.ndim != 3:
+            prediction = prediction[numpy.newaxis, ...]
+
+        # Crops image if necessary
+        slc = (
+            slice(None, None),
+            slice(
+                0 if j - self.size // 2 >= 0 else -1 * (j - self.size // 2),
+                prediction.shape[-2] if j + self.size // 2 < self.pred.shape[-2] else self.pred.shape[-2] - (j + self.size // 2)
+            ),
+            slice(
+                0 if i - self.size // 2 >= 0 else -1 * (i - self.size // 2),
+                prediction.shape[-1] if i + self.size // 2 < self.pred.shape[-1] else self.pred.shape[-1] - (i + self.size // 2)
+            )
+        )
+        pred = prediction[slc]
+
+        # Stores prediction in output arrays
+        self.pred[:, max(0, j - self.size // 2) : j + self.size // 2,
+                     max(0, i - self.size // 2) : i + self.size // 2] += pred
+        self.pixels[max(0, j - self.size // 2) : j + self.size // 2,
+                    max(0, i - self.size // 2) : i + self.size // 2] += 1
+
+    def return_prediction(self):
+        """
+        Method to return the final prediction.
+
+        :returns : The average prediction map from the overlapping predictions
+        """
+        self.pixels[self.pixels == 0] += 1 # Avoids division by 0
+        return (self.pred / self.pixels)[:, :self.shape[0], :self.shape[1]]
 
 def load_ckpt(output_folder, network_name=None, model="UNet", filename="checkpoints.hdf5",
                 verbose=True):
