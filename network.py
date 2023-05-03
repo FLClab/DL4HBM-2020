@@ -4,12 +4,40 @@ import glob
 import os
 import torch
 import pickle
+import h5py
 
 from torch import nn
 from collections import defaultdict
 from tqdm.auto import tqdm, trange
 
 import loader
+
+from dlutils.utils import PredictionBuilder
+
+
+def load_ckpt(output_folder, network_name=None, model="UNet", filename="checkpoints.hdf5",
+                verbose=True):
+    """
+    Saves the current network state to a hdf5 file. The architecture of the hdf5
+    file is
+    hdf5file
+        MICRANet
+            network
+
+    :param output_folder: A `str` to the output folder
+    :param networks: A `dict` of network models
+    :param filename: (optional) A `str` of the filename. Defaults to "checkpoints.hdf5"
+    :param verbose: (optional) Wheter the function in verbose
+    """
+    if verbose:
+        print("[----]     Loading network state")
+    with h5py.File(os.path.join(output_folder, filename), "r") as file:
+        model_group = file[model]
+        if not isinstance(network_name, str):
+            network_name = list(model_group.keys())[0]
+        state_dict = {k : torch.tensor(v[()]) for k, v in model_group[network_name].items()}
+
+    return state_dict
 
 class DoubleConvolver(nn.Module):
     """
@@ -96,6 +124,9 @@ class UNet(nn.Module):
     def __init__(self, in_channels, out_channels, number_filter=4, depth=4):
         super(UNet, self).__init__()
 
+        self.in_channels = in_channels
+        self.out_channels = out_channels
+
         self.input_conv = DoubleConvolver(in_channels=in_channels, out_channels=2**number_filter)
         self.contracting_path = nn.ModuleList()
         for i in range(depth - 1):
@@ -109,7 +140,7 @@ class UNet(nn.Module):
             )
         self.output_conv = nn.Conv2d(in_channels=2**number_filter, out_channels=out_channels, kernel_size=1)
 
-    def forward(self, x):
+    def forward(self, x, use_sigmoid=False):
         links = [] # keeps track of the links
         x = self.input_conv(x)
         links.append(x)
@@ -124,6 +155,9 @@ class UNet(nn.Module):
         for i, expanding in enumerate(self.expanding_path):
             x = expanding(x, links[- i - 1])
         x = self.output_conv(x)
+
+        if use_sigmoid:
+            x = torch.sigmoid(x)
 
         return x
 
@@ -267,9 +301,25 @@ class UNet(nn.Module):
         :param cuda: A `bool` wheter to load the model on the GPU
         :param epoch: An `int` of the epoch number to load. None results in best model
         """
-        epoch = "" if isinstance(epoch, type(None)) else f"_{epoch}"
-        net_params = torch.load(os.path.join(save_folder, f"params{epoch}.net"))
-        # optim_params = torch.load(os.path.join(save_folder, f"optimizer{epoch}.net"))
+        tmp = "" if isinstance(epoch, type(None)) else f"_{epoch}"
+        # net_params = torch.load(os.path.join(save_folder, f"params{epoch}.net"), map_location=torch.device("cpu"))
+
+        print(f"[%%%%] Loading pretrained model from: {save_folder}")
+        model_path = os.path.join(save_folder, f"params{tmp}.net")
+        if os.path.isfile(model_path):
+            net_params = torch.load(model_path,
+                                    map_location=torch.device("cpu"))
+        else:
+            net_params = load_ckpt(save_folder)
+            # This is required since other models were trained with slightly different varaible name
+            tmp = {}
+            for key, values in net_params.items():
+                key = key.replace("firstConvolution", "input_conv")
+                key = key.replace("contractingPath", "contracting_path")
+                key = key.replace("expandingPath", "expanding_path")
+                key = key.replace("lastConv", "output_conv")
+                tmp[key] = values
+            net_params = tmp 
 
         # Loads state dict of the model and puts it in evaluation mode
         self.load_state_dict(net_params)
@@ -326,6 +376,71 @@ class UNet(nn.Module):
 
             # To avoid memory leak
             del X, y, pred
+
+    def predict_complete_image(self, data, targets, batch_size=64, cuda=False, normalization=None, size=256, step=0.5):
+        """
+        Infers from the given data
+
+        :param data: A `numpy.ndarray` of data
+        :param tragets: A `numpy.ndarray` of target data
+        :param idx: A `list` of index to use for prediction
+        :param batch_size: An `int` of the batch size 
+        :param cuda: A `bool` wheter to load the model on the GPU
+        :param minmax: A `tuple` of normalization 
+        
+        :returns : A `torch.tensor` of the images
+        :returns : A `torch.tensor` of the targets
+        :returns : A `torch.tensor` of the predictions
+        :returns : A `torch.tensor` of the indices 
+        """
+        image_loader = loader.get_image_loader(data, targets, normalization=normalization)
+
+        self.eval()
+        for image, target, index in tqdm(image_loader, leave=False, desc="Images"):
+
+            image = numpy.pad(image, ((0, 0), (size, size), (size, size)), mode="symmetric")
+            target = numpy.pad(target, ((0, 0), (size, size), (size, size)), mode="symmetric")
+
+            predict_loader = loader.get_crop_loader(image, target, size=size, step=step) 
+            pb = PredictionBuilder(
+                image.shape[-2:], size, self.out_channels
+            )
+            for X, y, positions in tqdm(predict_loader, leave=False, desc="Prediction"):
+
+                # Verifies the shape of the data
+                if X.ndim == 3:
+                    X = X.unsqueeze(1)
+
+                # Send on GPU
+                if cuda:
+                    X = X.cuda()
+
+                # Prediction and loss computation
+                pred = self.forward(X, use_sigmoid=True)
+
+                if cuda:
+                    X = X.cpu().data.numpy()
+                    pred = pred.cpu().data.numpy()
+                else:
+                    X = X.data.numpy()
+                    pred = pred.data.numpy()
+                y = y.data.numpy()
+
+                positions = numpy.array([
+                    item.data.numpy() for item in positions
+                ])
+                pb.add_predictions(pred, positions.T)
+
+                # To avoid memory leak
+                del X, y, pred
+            
+            prediction = pb.return_prediction()
+
+            image = image[:, size : -size, size:-size]
+            target = target[:, size : -size, size:-size]
+            prediction = prediction[:, size : -size, size:-size]
+
+            yield image, target, prediction
 
 
 if __name__ == "__main__":

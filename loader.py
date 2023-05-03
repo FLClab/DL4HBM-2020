@@ -3,8 +3,76 @@ import numpy
 import torch
 import os
 import random
+import tifffile
 
 from torch.utils.data import Dataset, DataLoader
+
+from dlutils.sampler import OnTheFlySampler
+
+ACTIN = 0
+
+class NormalizationLayer:
+    """
+
+    """
+    def __init__(self, mode, stats=None):
+        self.mode = mode
+        self.stats = stats
+
+        if not self.mode:
+            self.mode = "default"
+
+    def __call__(self, *args, **kwargs):
+        """
+        Implements the __call__ method of the `NormalizationLayer`
+        """
+        return self.forward(*args, **kwargs)
+
+    def forward(self, *args, **kwargs):
+        """
+        Apply the normalization method to an input image
+        """
+        func = getattr(self, f"_{self.mode}_forward")
+        return func(*args, **kwargs)
+
+    def _default_forward(self, image, *args, **kwargs):
+        """
+        Does not apply any normalization to the image
+
+        :param image: A `numpy.ndarray` of the image
+
+        :returns : A `numpy.ndarray` of the image
+        """
+        return image
+
+    def _minmax_forward(self, image, *args, **kwargs):
+        """
+        Apply a min-max normalization to the image using the provided image
+        minimum and maximum
+
+        :param image: A `numpy.ndarray` of the image
+        :param image_min: A `numpy.ndarray` or `float` of the image minimum
+        :param image_min: A `numpy.ndarray` or `float` of the image maximum
+
+        :returns : A `numpy.ndarray` of the normalized image
+        """
+        image -= self.stats["image_min"]
+        image /= (0.8 * (self.stats["image_max"] - self.stats["image_min"]))
+        image = numpy.clip(image, 0, 1)
+        return image
+
+    def _quantile_forward(self, image, *args, **kwargs):
+        """
+        Apply a min-max normalization to the image using the {0.01, 0.99} quantiles
+        of the image.
+
+        :param image: A `numpy.ndarray` of the image
+
+        :returns : A `numpy.ndarray` of the normalized image
+        """
+        m, M = numpy.quantile(image[ACTIN], [0.01, 0.99])
+        image[ACTIN] = (image[ACTIN] - m) / (M - m)
+        return image
 
 class NumpyDataset(Dataset):
     def __init__(self, data, targets, validation, probability=0.5,
@@ -58,6 +126,77 @@ class NumpyDataset(Dataset):
 
     def __len__(self):
         return len(self.data)
+        
+class ImageDataset(Dataset):
+    def __init__(self, data, targets, validation, probability=0.5,
+                    normalization=None):
+        """
+        Instantiates the `NumpyDataset` class
+        
+        :param data: A `numpy.ndarray` of data with shape [N, H, W]
+        :param targets: A `numpy.ndarray` of targets with shape [N, H, W]
+        :param validation: A `bool` wheter the dataset is in validation mode 
+        :param probability: A `float` of the probability to apply data augmentation 
+        :param minmax: A `tuple` of normalization value
+        """
+        super(ImageDataset, self).__init__()
+
+        self.data = data
+        self.targets = targets
+        self.validation = validation
+        self.probability = probability
+        
+        self.normalization = normalization
+        if isinstance(normalization, type(None)):
+            self.normalization = NormalizationLayer(mode="default")
+
+    def __getitem__(self, index):
+        x = tifffile.imread(self.data[index])
+        if x.min() == 2 ** 15:
+            x = x - 2 ** 15
+
+        x = x.astype(numpy.float32)
+        x = self.normalization(x)
+
+        y = tifffile.imread(self.targets[index])
+        y = y.astype(numpy.float32)
+
+        x = torch.tensor(x, dtype=torch.float)
+        y = torch.tensor(y, dtype=torch.long)
+
+        return x, y, index
+
+    def __len__(self):
+        return len(self.data)
+    
+class CropDataset:
+    def __init__(self, data, target, size=256, step=0.5, *args, **kwargs):
+
+        self.data = data[[ACTIN]]
+        self.target = target
+
+        self.size = size
+        self.step = step
+
+        self.samples = []
+        for j in range(0, data.shape[-2] - size, int(self.size * self.step)):
+            for i in range(0, data.shape[-1] - size, int(self.size * self.step)):
+                self.samples.append((j + size // 2, i + size // 2))        
+
+    def __getitem__(self, index):
+
+        j, i = self.samples[index]
+
+        x = self.data[:, j - self.size // 2 : j + self.size // 2,
+                         i - self.size // 2 : i + self.size // 2]
+        
+        y = self.target[:, j - self.size // 2 : j + self.size // 2,
+                           i - self.size // 2 : i + self.size // 2]
+        
+        return x, y, (j, i)
+    
+    def __len__(self):
+        return len(self.samples)
 
 def get_loader(data, targets, batch_size=16, validation=False, minmax=(0, 255)):
     """
@@ -70,6 +209,29 @@ def get_loader(data, targets, batch_size=16, validation=False, minmax=(0, 255)):
     """
     dset = NumpyDataset(data, targets, validation=validation, minmax=minmax)
     return DataLoader(dset, batch_size=batch_size, shuffle=True, num_workers=2,
+                        drop_last=False)
+
+def get_image_loader(data, targets, batch_size=16, validation=False, normalization=None):
+    """
+    Creates a torch.utils.data.DataLoader with the given data and targets
+
+    :param data: A `numpy.ndarray` of the input data
+    :param targets: A `numpy.ndarray` of the target data
+
+    :returns : A `DataLoader`
+    """
+
+    dset = ImageDataset(data, targets, validation=validation, normalization=normalization)
+    return dset
+
+def get_crop_loader(data, target, batch_size=16, *args, **kwargs):
+    """
+    Creates a torch.utils.data.DataLoader with the given data and targets
+
+    :returns : A `DataLoader`
+    """
+    dset = CropDataset(data, target, *args, **kwargs)
+    return DataLoader(dset, batch_size=batch_size, shuffle=False, num_workers=2,
                         drop_last=False)
 
 def get_idx(data, train_ratio=0.7, force_new_idx=False):
