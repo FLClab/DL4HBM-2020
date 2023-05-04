@@ -206,7 +206,7 @@ def get_loader(data, targets, batch_size=16, validation=False, minmax=(0, 255)):
     :returns : A `DataLoader`
     """
     dset = NumpyDataset(data, targets, validation=validation, minmax=minmax)
-    return DataLoader(dset, batch_size=batch_size, shuffle=True, num_workers=2,
+    return DataLoader(dset, batch_size=batch_size, shuffle=True, num_workers=0,
                         drop_last=False)
 
 def get_image_loader(data, targets, batch_size=16, validation=False, normalization=None):
@@ -229,7 +229,7 @@ def get_crop_loader(data, target, batch_size=16, *args, **kwargs):
     :returns : A `DataLoader`
     """
     dset = CropDataset(data, target, *args, **kwargs)
-    return DataLoader(dset, batch_size=batch_size, shuffle=False, num_workers=2,
+    return DataLoader(dset, batch_size=batch_size, shuffle=False, num_workers=0,
                         drop_last=False)
 
 def get_idx(data, train_ratio=0.7, force_new_idx=False):
