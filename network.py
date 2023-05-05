@@ -92,7 +92,7 @@ class PredictionBuilder:
         return (self.pred / self.pixels)[:, :self.shape[0], :self.shape[1]]
 
 def load_ckpt(output_folder, network_name=None, model="UNet", filename="checkpoints.hdf5",
-                verbose=True):
+                verbose=True, epoch="best"):
     """
     Saves the current network state to a hdf5 file. The architecture of the hdf5
     file is
