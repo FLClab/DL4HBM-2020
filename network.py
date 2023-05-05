@@ -108,11 +108,20 @@ def load_ckpt(output_folder, network_name=None, model="UNet", filename="checkpoi
     if verbose:
         print("[----]     Loading network state")
     with h5py.File(os.path.join(output_folder, filename), "r") as file:
-        model_group = file[model]
-        if not isinstance(network_name, str):
-            network_name = list(model_group.keys())[0]
-        state_dict = {k : torch.tensor(v[()]) for k, v in model_group[network_name].items()}
+        if model in file:
+            model_group = file[model]
+            if not isinstance(network_name, str):
+                network_name = list(model_group.keys())[0]
+            state_dict = {k : torch.tensor(v[()]) for k, v in model_group[network_name].items()}
+        else:
+            if epoch == "max":
+                epoch = str(sorted([int(key) for key in file.keys() if key != "best" ])[-1])
+            main_group = file[epoch]
 
+            networks = {}
+            for key, values in main_group["network"].items():
+                networks[key] = {k : torch.tensor(v[()]) for k, v in values.items()}
+            state_dict = networks[list(networks.keys())[0]]
     return state_dict
 
 class DoubleConvolver(nn.Module):
