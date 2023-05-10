@@ -153,6 +153,9 @@ class ImageDataset(Dataset):
         if x.min() == 2 ** 15:
             x = x - 2 ** 15
 
+        if x.ndim == 2:
+            x = x[numpy.newaxis]
+
         x = x.astype(numpy.float32)
         x = self.normalization(x)
 
