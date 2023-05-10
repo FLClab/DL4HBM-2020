@@ -160,6 +160,8 @@ class ImageDataset(Dataset):
         x = self.normalization(x)
 
         y = tifffile.imread(self.targets[index])
+        if y.ndim == 2:
+            y = y[numpy.newaxis]                
         y = y.astype(numpy.float32)
 
         x = torch.tensor(x, dtype=torch.float)
